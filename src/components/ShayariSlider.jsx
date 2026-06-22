@@ -1,0 +1,73 @@
+"use client";
+import { useState, useEffect, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Copy, Check, ChevronLeft, ChevronRight } from "lucide-react";
+import { contentDatabase } from "@/data/posts";
+
+export default function ShayariSlider() {
+  const slides = contentDatabase.filter(item => item.category === "shayari" || item.category === "ghazal");
+  const [current, setCurrent] = useState(0);
+  const [copied, setCopied] = useState(false);
+
+  const nextSlide = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+  }, [slides.length]);
+
+  useEffect(() => {
+    const timer = setInterval(nextSlide, 7000);
+    return () => clearInterval(timer);
+  }, [nextSlide]);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(slides[current].text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className="w-full border border-[var(--foreground)] p-6 sm:p-10 rounded-2xl relative bg-[var(--background)] shadow-xl overflow-hidden">
+      <div className="absolute inset-0 celestial-glow w-64 h-64 mx-auto rounded-full -z-10 opacity-40" />
+      
+      <div className="flex justify-between font-sans text-[10px] tracking-widest uppercase border-b parchment-border pb-3 mb-6 opacity-60">
+        <span>No: {slides[current].articleNo} // {slides[current].category}</span>
+        <span>Writer: {slides[current].author}</span>
+      </div>
+
+      <div className="min-h-[140px] flex flex-col justify-center items-center">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.3 }}
+            className="text-center space-y-4"
+          >
+            <p className="text-xl sm:text-3xl font-serif font-bold italic whitespace-pre-line leading-relaxed">
+              "{slides[current].text}"
+            </p>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      <div className="flex justify-between items-center mt-6 pt-4 border-t parchment-border">
+        <button 
+          onClick={handleCopy}
+          className="font-sans text-xs font-bold px-3 py-1.5 border border-[var(--foreground)] hover:bg-[var(--foreground)] hover:text-[var(--background)] flex items-center gap-1.5 transition-all cursor-pointer bg-transparent"
+        >
+          {copied ? <Check className="w-3.5 h-3.5 text-green-500" /> : <Copy className="w-3.5 h-3.5" />}
+          <span>{copied ? "COPIED" : "COPY TEXT"}</span>
+        </button>
+
+        <div className="flex gap-2">
+          <button onClick={() => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)} className="p-1.5 border border-[var(--foreground)] hover:bg-[var(--foreground)] hover:text-[var(--background)] cursor-pointer bg-transparent">
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <button onClick={nextSlide} className="p-1.5 border border-[var(--foreground)] hover:bg-[var(--foreground)] hover:text-[var(--background)] cursor-pointer bg-transparent">
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

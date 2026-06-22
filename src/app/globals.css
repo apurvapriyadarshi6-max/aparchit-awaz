@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fdfaf2; /* Warm Parchment */
+    --foreground: #1c1917; /* Charcoal Ink */
+    --accent: #d4af37;     /* Rose Gold / Gold */
+    --muted: #78716c;
+    --aura-glow: radial-gradient(circle, rgba(212,175,55,0.15) 0%, rgba(253,250,242,0) 70%);
+  }
+
+  .dark {
+    --background: #09090b; /* Deep Cosmic Void */
+    --foreground: #f5f5f4; /* Soft Parchment Text */
+    --accent: #a855f7;     /* Starlit Purple Aura */
+    --muted: #a1a1aa;
+    --aura-glow: radial-gradient(circle, rgba(168,85,247,0.15) 0%, rgba(9,9,11,0) 70%);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Georgia', serif;
+    transition: background-color 0.5s ease, color 0.3s ease;
+    overflow-x: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Utilities for the Premium Aesthetic */
+.celestial-glow {
+  background: var(--aura-glow);
+  filter: blur(40px);
+}
+
+.parchment-border {
+  border: 1px solid rgba(120, 113, 108, 0.2);
 }
