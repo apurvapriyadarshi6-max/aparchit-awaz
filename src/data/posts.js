@@ -16,7 +16,7 @@ export const contentDatabase = [
     title: "एक तरफ़ा था सफ़र",
     author: "Apurva Priyadarshi",
     excerpt: "दोस्ती और मोहब्बत के बीच के भ्रम और टूटे हुए ख्वाबों की दास्तान।",
-    text: "वो मुस्कुराकर मिला, दोस्त समझ बैठा मैं,\nदिल के जज़्बातों को फिर सच समझ बैठा मैं।\n\nउसकी बातों में मोहब्बत का इशारा न था,\nफिर भी हर lफ़्ज़ को पैग़ाम समझ बैठा मैं।\n\nवो किसी और के ख़्वाबों में सजा करता था,\nखुद को उसका ही मुकद्दर समझ बैठा मैं।\n\nअब जो टूटा हूँ तो एहसास हुआ है मुझको,\nएक तरफ़ा था सफ़र, साथ समझ बैठा मैं।",
+    text: "वो मुस्कुराकर मिला, दोस्त समझ बैठा मैं,\nदिल के जज़्बातों को फिर सच समझ बैठा मैं।\n\nउसकी बातों में मोहब्बत का इशारा न था,\nफिर भी हर लफ़्ज़ को पैग़ाम समझ बैठा मैं।\n\nवो किसी और के ख़्वाबों में सजा करता था,\nखुद को उसका ही मुकद्दर समझ बैठा मैं।\n\nअब जो टूटा हूँ तो एहसास हुआ है मुझको,\nएक तरफ़ा था सफ़र, साथ समझ बैठा मैं।",
     translation: "They met with a smile and I mistook it for friendship; it was a one-sided journey that I mistook for companionship..."
   },
   {
@@ -26,7 +26,7 @@ export const contentDatabase = [
     title: "हौसलों की आग",
     author: "Apurva Priyadarshi",
     excerpt: "मुश्किलों से लड़कर खुद को उठाने और हौसला बनाए रखने की प्रेरणा देती ग़ज़ल।",
-    text: "हौसलों की आग दिल में जलाए रखना,\nमुश्किलों में भी कदम आगे बढ़ाए रखना।\n\nलोग गिरते हुए इंसान पे हँसते हैं बहुत,\nतुम मगर खुद को हमेशा उठाए रखना।\n\nMंज़िलें खुद ही सलामत राह दिखा देती हैं,\nबस इरादों को ज़रा सा जगाए रखना।\n\nवक्त बदलेगा यकीनन ये भरोसा भी रहे,\nखुद पे विश्वास का सूरज उगाए रखना।",
+    text: "हौसलों की आग दिल में जलाए रखना,\nमुश्किलों में भी कदम आगे बढ़ाए रखना।\n\nलोग गिरते हुए इंसान पे हँसते हैं बहुत,\nतुम मगर खुद को हमेशा उठाए रखना।\n\nमंज़िलें खुद ही सलामत राह दिखा देती हैं,\nबस इरादों को ज़रा सा जगाए रखना।\n\nवक्त बदलेगा यकीनन ये भरोसा भी रहे,\nखुद पे विश्वास का सूरज उगाए रखना।",
     translation: "Keep the fire of courage burning in your heart, keep moving forward even through hardships..."
   },
   {
@@ -73,11 +73,41 @@ export const contentDatabase = [
     id: "art-008",
     articleNo: "008",
     category: "shayari",
-    title: "Bonus Short Shayari Collection",
+    title: "शिकायत कैसी",
     author: "Apurva Priyadarshi",
-    excerpt: "Four profound couplets traversing themes of One-Sided Love, Motivation, Fake Society, and True Love.",
-    text: "One-Sided Love:\nवो मेरा हो न सका, इसमें शिकायत कैसी,\nमैंने चाहा था उसे, ये मेरी मोहब्बत थी।\n\nMotivation:\nउड़ना है तो गिरने का हुनर भी रखना,\nहर जीत से पहले कई हारें आती हैं।\n\nFake Society:\nयहाँ चेहरे खरीदना आसान है,\nमगर सच्चे लोग आज भी महंगे हैं।\n\nLove:\nतेरे साथ बैठना भी इबादत जैसा है,\nकुछ कहे बिना सब कह जाना जैसा है।",
-    translation: "A curated bonus collection of short verses handling human connection, social constructs, resilience, and silent devotion."
+    excerpt: "एक तरफ़ा मोहब्बत के सुकून और उसकी सचाई को दर्शाती दो लाइनें।",
+    text: "वो मेरा हो न सका, इसमें शिकायत कैसी,\nमैंने चाहा था उसे, ये मेरी मोहब्बत थी।",
+    translation: "No complaints if they couldn't be mine; loving them was my own beautiful choice."
+  },
+  {
+    id: "art-009",
+    articleNo: "009",
+    category: "shayari",
+    title: "गिरने का हुनर",
+    author: "Apurva Priyadarshi",
+    excerpt: "जीत और हार के बीच हौसले की उड़ान सिखाती एक विचारपूर्ण शायरी।",
+    text: "उड़ना है तो गिरने का हुनर भी रखना,\nहर जीत से पहले कई हारें आती हैं।",
+    translation: "If you want to fly, learn the art of falling; victories are always preceded by failures."
+  },
+  {
+    id: "art-010",
+    articleNo: "010",
+    category: "shayari",
+    title: "झूठ का लिबास",
+    author: "Apurva Priyadarshi",
+    excerpt: "खोखले समाज और बनावटी चेहरों पर एक तीखी प्रतिक्रिया।",
+    text: "यहाँ चेहरे खरीदना आसान है,\nमगर सच्चे लोग आज भी महंगे हैं।",
+    translation: "Buying false masks is easy here, but finding an authentic, genuine soul remains rare."
+  },
+  {
+    id: "art-011",
+    articleNo: "011",
+    category: "shayari",
+    title: "इबादत जैसा साथ",
+    author: "Apurva Priyadarshi",
+    excerpt: "खामोश मोहब्बत और रूहानी जुड़ाव का एक बेहद हसीन एहसास।",
+    text: "तेरे साथ बैठना भी इबादत जैसा है,\nकुछ कहे बिना सब कह जाना जैसा है।",
+    translation: "Sitting beside you feels like a quiet prayer, where everything is expressed without uttering a word."
   }
 ];
 
