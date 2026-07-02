@@ -108,7 +108,44 @@ export const contentDatabase = [
     excerpt: "खामोश मोहब्बत और रूहानी जुड़ाव का एक बेहद हसीन एहसास।",
     text: "तेरे साथ बैठना भी इबादत जैसा है,\nकुछ कहे बिना सब कह जाना जैसा है।",
     translation: "Sitting beside you feels like a quiet prayer, where everything is expressed without uttering a word."
-  }
+  },
+  {
+    id: "art-012",
+    articleNo: "012",
+    category: "kavita",
+    title: "अभिमान और आत्मसम्मान",
+    author: "Aparchit Awaz",
+    excerpt: "स्वाभिमान, अभिमान और क्षणभंगुर जीवन के गहरे सत्य को दर्शाती एक मर्मस्पर्शी कविता।",
+    text: `ये स्वाभिमान और अभिमान मुझे न दिखाया कर,
+अपने चरित्र की पहचान मुझे न सिखाया कर।
+यूँ तो तूने देखे होंगे लाखों स्वाभिमान यहाँ,
+पर देखा है कभी किसी के आगे झुकता आसमाँ?
+
+जिस चाँद पर करता है जग सारा अभिमान,
+वो भी सूरज के आगे खो देता अपनी शान।
+आज जो आईना तुझे तेरा मान दिखाता है,
+वक्त वही कल तुझे तेरी औकात बताता है।
+
+हर कदम पर तुझे नई पहचान मिलेगी,
+अपने भीतर ही तुझको नई उड़ान मिलेगी।
+पर इतना भी अपने रूप का गुमान न करना,
+क्षणभंगुर जीवन पर अभिमान न करना।
+
+पंचतत्व से बना ये तन एक दिन मिट जाएगा,
+माटी से उठकर फिर माटी में मिल जाएगा।
+तेरा ऊँचा स्वाभिमान भी वहीं शून्य हो जाएगा,
+तेरा सारा अभिमान समय संग खो जाएगा।
+
+रह जाएँगे केवल तेरे कर्मों के निशान,
+चरित्र ही बनेगा तेरी सच्ची पहचान।
+इसलिए अभिमान नहीं, आत्मसम्मान सँजोकर चल,
+सत्य, प्रेम और विनय को हृदय में बोकर चल।
+
+जो झुककर भी ऊँचा रहे, वही महान कहलाए,
+चरित्र का दीपक ही युगों-युगों तक जगमगाए।`,
+    translation: "Do not boast of your pride and ego to me, nor try to teach me the true definition of character. While the world may have seen countless displays of self-worth, have you ever seen the vast sky bow down to anyone? Even the moon, which the world admires, loses its luster in front of the sun. The mirror showing your pride today will reveal your reality tomorrow. You will find a new identity and high aspirations within, but do not take pride in this fleeting life. This body made of five elements will return to dust, and all pride will dissolve into nothingness. Only your deeds will remain, and character will be your true legacy. Therefore, carry self-respect, not arrogance, and plant the seeds of truth, love, and humility. True greatness belongs to those who stay humble, and the lamp of character shines across generations."
+}
+
 ];
 
 export const customNotifications = [
